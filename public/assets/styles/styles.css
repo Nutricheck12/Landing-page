@@ -1,23 +1,8 @@
-:root {
-  --lavanda: #B8A1EF;
-  --lavanda-claro: #F3ECFC;
-  --verde: #57CC99;
-  --blanco: #FFFFFF;
-}
-
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   background-color: #FAFAFA;
   color: #2D2D2D;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .navbar {
@@ -80,38 +65,10 @@ body {
 
 .hero {
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 5%;
   background-color: #F3ECFC;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.hero--centered {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #F3ECFC;
-  padding: 3rem 5%;
-}
-
-.user-options {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .hero{
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 .content {
@@ -286,30 +243,30 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.about-us-text {
+.about-us-texto {
   flex: 1 1 55%;
   padding: 1rem;
 }
 
-.about-us-text h2 {
+.about-us-texto h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.about-us-text p {
+.about-us-texto p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
 
-.about-us-values {
+.about-us-valores {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.value {
+.valor {
   background-color: #F8F4FF;
   border-radius: 15px;
   padding: 1rem;
@@ -317,19 +274,19 @@ h1 {
   text-align: center;
 }
 
-.value i {
+.valor i {
   font-size: 2rem;
   color: #57CC99;
   margin-bottom: 0.5rem;
 }
 
-.value h3 {
+.valor h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
 
-.value p {
+.valor p {
   font-size: 0.95rem;
   color: #2D2D2D;
 }
@@ -350,7 +307,7 @@ h1 {
   padding: 4rem 2rem;
 }
 
-.service-container {
+.service-contenedor {
   background-color: #ffffff;
   max-width: 1100px;
   margin: 0 auto;
@@ -360,13 +317,13 @@ h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.service-container h2 {
+.service-contenedor h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.subtitle {
+.subtitulo {
   font-size: 1.1rem;
   margin-bottom: 3rem;
   line-height: 1.6;
@@ -420,7 +377,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.testimonies-description {
+.testimonies-descripcion {
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -459,7 +416,7 @@ h1 {
   text-align: center;
 }
 
-.contact-container {
+.contact-contenedor {
   background-color: #ffffff;
   max-width: 1000px;
   margin: 0 auto;
@@ -468,13 +425,13 @@ h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.contact-container h2 {
+.contact-contenedor h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.contact-container p {
+.contact-contenedor p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -513,20 +470,20 @@ h1 {
   color: #2D2D2D;
 }
 
-.social-network {
+.redes-sociales {
   display: flex;
   justify-content: center;
   gap: 1.2rem;
   margin-top: 2rem;
 }
 
-.social-network a {
+.redes-sociales a {
   font-size: 1.5rem;
   color: #57CC99;
   transition: color 0.3s ease;
 }
 
-.social-network a:hover {
+.redes-sociales a:hover {
   color: #B8A1EF;
 }
 
@@ -555,11 +512,11 @@ h1 {
   color: #57CC99;
 }
 
-.footer .email {
+.footer .correo {
   margin: 0.5rem 0;
 }
 
-.footer .email i {
+.footer .correo i {
   color: #57CC99;
   margin-right: 0.4rem;
 }
@@ -627,154 +584,4 @@ h1 {
   color: #000;               
   transform: scale(1.08);    
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
-}
-
-.chat-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 5%;
-  background-color: var(--lavanda-claro);
-  min-height: 80vh;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.chatbox {
-  width: 100%;
-  max-width: 1100px;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(184, 161, 239, 0.15);
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
-  box-sizing: border-box;
-}
-
-.chatbox-body {
-  flex: 1;
-  overflow-y: auto;
-  padding: 1.5rem;
-  border-radius: 12px;
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  scroll-behavior: smooth;
-  min-height: 500px;
-  max-height: 500px;
-  border: 1px solid #ddd;
-}
-
-.message {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  animation: fadeIn 0.3s ease-in;
-}
-
-.message p {
-  margin: 0;
-  padding: 0.8rem 1rem;
-  border-radius: 15px;
-  font-size: 1rem;
-  max-width: 70%;
-  word-wrap: break-word;
-}
-
-.bot-message {
-  align-self: flex-start;
-}
-
-.user-message {
-  align-self: flex-end;
-  flex-direction: row-reverse;
-}
-
-.bot-message p {
-  background-color: var(--lavanda);
-  color: white;
-}
-
-.user-message p {
-  background-color: var(--verde);
-  color: white;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--lavanda);
-  background-color: #fff;
-}
-
-.chat-input-area {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-#chatInput {
-  flex: 1;
-  padding: 0.7rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: var(--verde);
-  color: white;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #449d7f;
-}
-
-.loading {
-  font-style: italic;
-  color: #999;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0% { opacity: 0.2; }
-  50% { opacity: 1; }
-  100% { opacity: 0.2; }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.back-button {
-  margin-left: auto;
-  background-color: white;
-  color: var(--lavanda);
-  padding: 0.4rem 0.8rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-weight: bold;
-  transition: background 0.2s ease;
-}
-
-.back-button:hover {
-  background-color: var(--blanco);
-  color: var(--verde);
 }
