@@ -148,6 +148,10 @@ h1 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.cta-container {
+  margin-bottom: 32px;
+}
+
 .specialist {
   margin-top: 1rem;
   font-size: 0.9rem;
